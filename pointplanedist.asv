@@ -1,0 +1,8 @@
+% POINTPLANEDIST
+%
+% Returns minimum distance between a plane (n,q) and point (p)
+%
+% (n,q)  are a normal and origin which character
+function d = pointplanedist(n,q,p)
+    d = abs(dot(n,p-q))/norm(n);
+end
